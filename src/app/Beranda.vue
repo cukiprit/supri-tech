@@ -1,15 +1,25 @@
 <script setup>
 import CardProjectExamples from '@/components/CardProjectExamples.vue';
 import CardReviewClient from '@/components/CardReviewClient.vue';
-import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
+// import { AOS } from 'aos';
+// import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
+
+// AOS.init({
+//   delay: 1,
+//   easing: 'easy',
+//   once: true
+// })
+
+
 </script>
 
 <template>
   <div class="" id="beranda">
     <div class="relative p-20 bg-orange-700 overflow-hidden">
-      <div class="text-center text-white">
-        <h1 class="text-6xl font-medium mb-8">Kreatifitaskan Websitemu</h1>
-        <p class="text-lg w-2/3 mx-auto text-gray-200">Kami memberikan layanan pembuatan website, perancangan desain
+      <div data-aos="fade-up" data-aos-duration="1600" class="text-center text-white">
+        <h1 class="text-7xl font-semibold mb-8">Kreatifitaskan Websitemu</h1>
+        <p class="text-xl w-2/3 mx-auto text-gray-100">Kami memberikan layanan pembuatan website,
+          perancangan desain
           antarmuka
           aplikasi
           anda,
@@ -17,7 +27,7 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
           konsultasi
           digitalisasi konten bersama <i>IT Consultant</i> kami</p>
       </div>
-      <div class="flex items-center justify-center">
+      <div data-aos="fade-up" data-aos-duration="1600" class="flex items-center justify-center">
         <div class="w-fit h-fit flex rounded-full px-12 py-2 me-5 bg-orange-100">
           <p class="me-3">supri.tech@gmail.com</p>
           <img width="25" height="25" src="https://img.icons8.com/color/144/gmail-new.png" alt="gmail-new" />
@@ -26,7 +36,7 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
           <img width="40" height="40" src="https://img.icons8.com/ios-glyphs/90/ffedd5/quote.png" alt="quote" />
         </div>
       </div>
-      <div class="flex justify-center items-center">
+      <div data-aos="fade-up" data-aos-duration="1600" class="flex justify-center items-center">
         <div class="w-1/5 mx-4 z-10">
           <img class="rounded shadow-lg" src="/public/CraftworkCard2.png" alt="">
         </div>
@@ -44,7 +54,7 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
     </div>
 
     <div class="relative min-h-screen overflow-hidden flex p-20">
-      <div class="w-1/2">
+      <div data-aos="fade-right" data-aos-duration="800" class="w-1/2">
         <div class="">
           <h1 class="text-5xl font-bold">Fokus Kualitas Website</h1>
           <p class="my-5 text-lg text-gray-500">Konsulasi dengan <i>IT Consultant</i> kami untuk mengetahui website yang
@@ -78,7 +88,7 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
 
 
     <div class="min-h-screen p-20 flex items-center" style="background-image: url(/public/ShinyOverlay.svg);">
-      <div class="grid grid-cols-3">
+      <div data-aos="zoom-in" data-aos-duration="1500" class="grid grid-cols-3">
         <div class="relative col-span-2 max-h-[35em]">
           <img
             class="h-full w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
@@ -105,7 +115,7 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
 
 
     <div class="min-h-screen p-20">
-      <div class="w-2/3">
+      <div data-aos="fade-up" data-aos-duration="1200" class="w-2/3">
         <h1 class="text-4xl font-bold">Beberapa Program Unggulan</h1>
         <p class="my-5 text-lg text-gray-500">Konsulasi dengan <i>IT Consultant</i> kami untuk mengetahui website yang
           anda inginkan
@@ -114,7 +124,7 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
         </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div data-aos="fade-up" data-aos-duration="1400" class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <card-project-examples imageProject="CraftworkCard1.png" label="UI Design" nameProject="Design UI Mari Membaca"
           labelIcon="laptop-coding" />
         <card-project-examples imageProject="CraftworkCard2.png" label="UI Design" nameProject="Design UI Mari Membaca"
@@ -128,7 +138,8 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
 
     <div class="min-h-screen p-20 flex flex-col items-center justify-center"
       style="background: #ffffff url(/public/RectLight.svg) center center/cover no-repeat;">
-      <div class="w-2/3 text-center text-white">
+
+      <div data-aos="fade-up" data-aos-duration="1400" class="w-2/3 text-center text-white">
         <div class="flex items-center justify-center mb-5">
           <h1 class="text-5xl font-bold mt-10 me-4">Testimoni Layanan</h1>
           <img width="60" height="60" src="https://img.icons8.com/ios-glyphs/90/ffffff/thumbs-up-down.png"
@@ -137,7 +148,8 @@ import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
         <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus fuga </p>
       </div>
 
-      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <div data-aos="fade-up" data-aos-duration="1400" id="default-carousel" class="relative w-full"
+        data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <!-- Item 1 -->
