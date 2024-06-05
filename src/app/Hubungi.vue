@@ -3,12 +3,13 @@
 
 <template>
   <div class="" id="hubungi">
-    <div class="min-h-screen mt-14 p-7 lg:p-20" style="background: url(/public/Hexagon.svg);">
+    <div class="min-h-screen mt-14 p-7 md:p-10 lg:p-20" style="background: url(/public/Hexagon.svg);">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-        <div data-aos="zoom-out" data-aos-duration="1400" class="text-white flex flex-col justify-between py-8 lg:p-10">
+        <div data-aos="zoom-out" data-aos-duration="1400"
+          class="text-white flex flex-col justify-between py-8 md:pt-0 lg:p-10">
           <div class="">
-            <h1 class="text-3xl lg:text-5xl font-bold mb-4">Mari Terhubung Dengan Kami!</h1>
-            <p class="lg:text-lg mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus inventore
+            <h1 class="text-2xl font-bold mb-4 md:text-3xl lg:text-5xl">Mari Terhubung Dengan Kami!</h1>
+            <p class="sm:text-lg mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus inventore
               deleniti
               earum
               aspernatur quibusdam accusantium. </p>
@@ -37,12 +38,12 @@
 
 
         <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="300" data-aos-duration="1400"
-          data-aos-delay="700" class="bg-white rounded-lg p-9 shadow-lg">
+          data-aos-delay="700" class="bg-white rounded-lg p-7 shadow-lg sm:p-9">
           <h1 class="text-2xl font-bold mb-1">Mari Terhubung </h1>
-          <p class="lg:text-lg mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit
+          <p class="sm:text-lg mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit
           </p>
           <form class="w-full mx-auto">
-            <div class="grid lg:grid-cols-2 gap-3">
+            <div class="grid sm:grid-cols-2 gap-3">
               <div class="mb-5">
                 <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
                   Lengkap</label>

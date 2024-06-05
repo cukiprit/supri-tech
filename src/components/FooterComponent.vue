@@ -1,8 +1,8 @@
 <template>
-  <footer class="bg-slate-50 dark:bg-gray-900 py-8">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-      <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
+  <footer class="bg-slate-50 dark:bg-gray-900 md:p-0 lg:py-8">
+    <div class="mx-auto w-full max-w-screen-xl p-7 md:p-10 lg:py-8">
+      <div class="lg:flex lg:justify-between">
+        <div class="mb-10 lg:mb-0">
           <div class="">
             <a href="https://flowbite.com/" class="flex items-center">
               <img src="/public/SupriTech.png" class="h-8 me-3 rounded-full" alt="FlowBite Logo" />
