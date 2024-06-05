@@ -1,19 +1,15 @@
 <script>
 export default {
-  props: [
-    'photo',
-    'name',
-    'project'
-  ]
+  props: ['photo', 'name', 'project'],
 };
 </script>
 
 <template>
   <div id="card-review-client"
-    class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    class="w-full lg:max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div class="flex items-center mb-3">
       <div class="flex-shrink-0">
-        <img class="w-11 h-11 rounded-full" :src="`../../public/${photo}`" alt="Neil image">
+        <img class="w-11 h-11 rounded-full" :src="`../../public/${photo}`" alt="Neil image" />
       </div>
       <div class="flex-1 min-w-0 ms-4">
         <p class="font-medium text-gray-900 truncate dark:text-white">
@@ -48,8 +44,9 @@ export default {
         </div>
       </div>
     </div>
-    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Debitis, accusantium.</p>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium.
+    </p>
     <p class="font-semibold border-t pt-2">{{ project }}</p>
   </div>
 </template>

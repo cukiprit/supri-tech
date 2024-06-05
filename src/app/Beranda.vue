@@ -1,24 +1,15 @@
 <script setup>
 import CardProjectExamples from '@/components/CardProjectExamples.vue';
 import CardReviewClient from '@/components/CardReviewClient.vue';
-// import { AOS } from 'aos';
-// import { ref, onMounted, onUpdated, watch, createApp } from 'vue';
-
-// AOS.init({
-//   delay: 1,
-//   easing: 'easy',
-//   once: true
-// })
-
-
 </script>
 
 <template>
   <div class="" id="beranda">
-    <div class="relative p-20 bg-orange-700 overflow-hidden">
-      <div data-aos="fade-up" data-aos-duration="1600" class="text-center text-white">
-        <h1 class="text-7xl font-semibold mb-8">Kreatifitaskan Websitemu</h1>
-        <p class="text-xl w-2/3 mx-auto text-gray-100">Kami memberikan layanan pembuatan website,
+    <div class="lg:min-h-screen relative mt-14 px-7 py-20 lg:p-20 bg-orange-700 overflow-hidden">
+      <div data-aos="fade-down" data-aos-duration="1400" class="text-center text-white">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-8 ">Kreatifitaskan Websitemu</h1>
+        <p class="lg:text-lg lg:w-2/3 mx-auto text-gray-100">Kami memberikan layanan
+          pembuatan website,
           perancangan desain
           antarmuka
           aplikasi
@@ -27,16 +18,17 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
           konsultasi
           digitalisasi konten bersama <i>IT Consultant</i> kami</p>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1600" class="flex items-center justify-center">
-        <div class="w-fit h-fit flex rounded-full px-12 py-2 me-5 bg-orange-100">
-          <p class="me-3">supri.tech@gmail.com</p>
+      <div data-aos="fade-down" data-aos-duration="1400" class="flex items-center justify-center">
+        <div class="w-fit h-fit flex rounded-full px-12 py-2 lg:me-5 bg-orange-100">
+          <p class="lg:me-3">supri.tech@gmail.com</p>
           <img width="25" height="25" src="https://img.icons8.com/color/144/gmail-new.png" alt="gmail-new" />
         </div>
         <div class="mb-20 mt-8">
-          <img width="40" height="40" src="https://img.icons8.com/ios-glyphs/90/ffedd5/quote.png" alt="quote" />
+          <img class="hidden lg:block" width="40" height="40"
+            src="https://img.icons8.com/ios-glyphs/90/ffedd5/quote.png" alt="quote" />
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1600" class="flex justify-center items-center">
+      <div data-aos="fade-up" data-aos-duration="1400" class="hidden lg:flex justify-center items-center">
         <div class="w-1/5 mx-4 z-10">
           <img class="rounded shadow-lg" src="/public/CraftworkCard2.png" alt="">
         </div>
@@ -50,60 +42,69 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
           <img class="rounded shadow-lg" src="/public/CraftworkCard1.png" alt="">
         </div>
       </div>
-      <img class="absolute start-0 end-0 -bottom-12 opacity-25" src="/public/WaveLine.png" alt="">
+      <img class="hidden lg:absolute start-0 end-0 -bottom-12 opacity-25" src="/public/WaveLine.png" alt="">
     </div>
 
-    <div class="relative min-h-screen overflow-hidden flex p-20">
-      <div data-aos="fade-right" data-aos-duration="800" class="w-1/2">
-        <div class="">
-          <h1 class="text-5xl font-bold">Fokus Kualitas Website</h1>
-          <p class="my-5 text-lg text-gray-500">Konsulasi dengan <i>IT Consultant</i> kami untuk mengetahui website yang
+    <div class="relative min-h-screen overflow-hidden flex p-7 lg:p-20">
+      <div data-aos="fade-right" data-aos-duration="1400" class="text-center lg:text-left lg:w-1/2">
+        <div class="mb-14 lg:mb-8">
+          <h1 class="text-3xl lg:text-4xl font-bold">Fokus Kualitas Website</h1>
+          <p class="my-5 lg:text-lg text-gray-500">Konsulasi dengan <i>IT Consultant</i> kami untuk mengetahui website
+            yang
             anda
             inginkan
             dengan
             berbagai fitur
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-12">
+        <div class="grid lg:grid-cols-2 gap-12">
           <div class="">
-            <img width="30" height="30" src="https://img.icons8.com/ios/100/idea--v1.png" alt="idea--v1" />
+            <div class="border w-fit p-2 rounded bg-slate-100 mx-auto lg:border-none lg:p-0 lg:bg-transparent lg:mx-0">
+              <img width="30" height="30" src="https://img.icons8.com/ios/100/idea--v1.png" alt="idea--v1" />
+            </div>
             <h5 class="font-bold text-lg my-2">Responsibilitas</h5>
             <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus fuga </p>
           </div>
           <div class="">
-            <img width="30" height="30" src="https://img.icons8.com/ios/100/idea--v1.png" alt="idea--v1" />
+            <div class="border w-fit p-2 rounded bg-slate-100 mx-auto lg:border-none lg:p-0 lg:bg-transparent lg:mx-0">
+              <img width="30" height="30" src="https://img.icons8.com/ios/100/idea--v1.png" alt="idea--v1" />
+            </div>
             <h5 class="font-bold text-lg my-2">Kreatifitas</h5>
             <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus fuga </p>
           </div>
           <div class="">
-            <img width="30" height="30" src="https://img.icons8.com/ios/100/laptop-coding.png" alt="laptop-coding" />
+            <div class="border w-fit p-2 rounded bg-slate-100 mx-auto lg:border-none lg:p-0 lg:bg-transparent lg:mx-0">
+              <img width="30" height="30" src="https://img.icons8.com/ios/100/laptop-coding.png" alt="laptop-coding" />
+            </div>
             <h5 class="font-bold text-lg my-2">Fungsionalitas</h5>
             <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus fuga </p>
           </div>
         </div>
       </div>
-      <img class="absolute w-1/2 h-fit rounded-2xl -right-24 -bottom-12" style="box-shadow: -3px -3px 10px #e2e8f0"
-        src="/public/CraftworkCard1.png" alt="">
+      <img class="hidden lg:block absolute w-1/2 h-fit rounded-2xl -right-24 -bottom-12"
+        style="box-shadow: -3px -3px 10px #e2e8f0" src="/public/CraftworkCard1.png" alt="">
     </div>
 
 
-    <div class="min-h-screen p-20 flex items-center" style="background-image: url(/public/ShinyOverlay.svg);">
-      <div data-aos="zoom-in" data-aos-duration="1500" class="grid grid-cols-3">
+    <div class="lg:min-h-screen p-7 lg:p-20 flex lg:items-center"
+      style="background-image: url(/public/ShinyOverlay.svg);">
+      <div data-aos="zoom-in" data-aos-duration="1400" class="grid lg:grid-cols-3 my-auto">
         <div class="relative col-span-2 max-h-[35em]">
           <img
-            class="h-full w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            class="h-full w-full transition-all duration-300 rounded-t-lg lg:rounded-l-lg lg:rounded-r-none cursor-pointer filter grayscale hover:grayscale-0"
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png"
             alt="image description">
-          <div class="absolute bottom-0 p-10 text-white">
+          <div class="absolute bottom-0 p-5 lg:p-10 text-white">
             <p class="italic font-semibold text-2xl">IT Consultant</p>
             <p class="text-xl font-light">SupriTech Company</p>
           </div>
         </div>
-        <div class="flex flex-col justify-center bg-white p-8 rounded-r-lg">
+        <div
+          class="lg:flex flex-col lg:justify-center bg-white p-5 lg:p-8 rounded-b-lg lg:rounded-r-lg lg:rounded-bl-none">
           <div class="mb-5">
             <img width="45" height="45" src="https://img.icons8.com/sf-regular-filled/96/EE5432/quote-left.png"
               alt="quote-left" />
-            <h1 class="text-4xl font-medium">Konsultan Website Terpercaya</h1>
+            <h1 class="text-3xl lg:text-4xl font-medium">Konsultan Website Terpercaya</h1>
           </div>
           <p class="text-lg text-gray-500">Konsultasi dengan <i>IT Consultant</i> kami untuk mengetahui website yang
             anda
@@ -114,9 +115,9 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
     </div>
 
 
-    <div class="min-h-screen p-20">
-      <div data-aos="fade-up" data-aos-duration="1200" class="w-2/3">
-        <h1 class="text-4xl font-bold">Beberapa Program Unggulan</h1>
+    <div class="min-h-screen p-7 lg:p-20">
+      <div data-aos="fade-up" data-aos-duration="1400" class="text-center lg:text-left lg:w-2/3">
+        <h1 class="text-3xl lg:text-4xl font-bold">Beberapa Program Unggulan</h1>
         <p class="my-5 text-lg text-gray-500">Konsulasi dengan <i>IT Consultant</i> kami untuk mengetahui website yang
           anda inginkan
           dengan
@@ -124,7 +125,7 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
         </p>
       </div>
 
-      <div data-aos="fade-up" data-aos-duration="1400" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div data-aos="fade-up" data-aos-duration="1400" class="grid lg:grid-cols-2 md:grid-cols-3 gap-4 mt-10">
         <card-project-examples imageProject="CraftworkCard1.png" label="UI Design" nameProject="Design UI Mari Membaca"
           labelIcon="laptop-coding" />
         <card-project-examples imageProject="CraftworkCard2.png" label="UI Design" nameProject="Design UI Mari Membaca"
@@ -136,23 +137,21 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
       </div>
     </div>
 
-    <div class="min-h-screen p-20 flex flex-col items-center justify-center"
+    <div class="min-h-screen p-7 lg:p-20 flex flex-col items-center lg:justify-center"
       style="background: #ffffff url(/public/RectLight.svg) center center/cover no-repeat;">
 
-      <div data-aos="fade-up" data-aos-duration="1400" class="w-2/3 text-center text-white">
+      <div data-aos="fade-up" data-aos-duration="1400" class="lg:w-2/3 text-center text-white">
         <div class="flex items-center justify-center mb-5">
-          <h1 class="text-5xl font-bold mt-10 me-4">Testimoni Layanan</h1>
-          <img width="60" height="60" src="https://img.icons8.com/ios-glyphs/90/ffffff/thumbs-up-down.png"
-            alt="thumbs-up-down" />
+          <h1 class="text-3xl lg:text-4xl font-bold lg:mt-10 lg:me-4">Testimoni Layanan</h1>
+          <img class="hidden lg:block" width="50" height="50"
+            src="https://img.icons8.com/ios-glyphs/90/ffffff/thumbs-up-down.png" alt="thumbs-up-down" />
         </div>
         <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus fuga </p>
       </div>
 
-      <div data-aos="fade-up" data-aos-duration="1400" id="default-carousel" class="relative w-full"
+      <div data-aos="fade-up" data-aos-duration="1400" id="default-carousel" class="hidden relative w-full"
         data-carousel="slide">
-        <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <!-- Item 1 -->
           <div class="duration-700 ease-in-out flex justify-between items-center" data-carousel-item>
             <card-review-client photo="scott-gummerson-_5Q1-ae44aw-unsplash.jpg" name="Naufal Zaul Karim"
               project="Design UI Mari Membaca" />
@@ -161,7 +160,6 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
             <card-review-client photo="scott-gummerson-_5Q1-ae44aw-unsplash.jpg" name="Hendriansyah Nur Assabil"
               project="Consultant UMKM Bersama" />
           </div>
-          <!-- Item 2 -->
           <div class="duration-700 ease-in-out flex justify-between items-center" data-carousel-item>
             <card-review-client photo="scott-gummerson-_5Q1-ae44aw-unsplash.jpg" name="Naufal Zaul Karim"
               project="Design UI Mari Membaca" />
@@ -170,7 +168,6 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
             <card-review-client photo="scott-gummerson-_5Q1-ae44aw-unsplash.jpg" name="Hendriansyah Nur Assabil"
               project="Consultant UMKM Bersama" />
           </div>
-          <!-- Item 3 -->
           <div class="duration-700 ease-in-out flex justify-between items-center" data-carousel-item>
             <card-review-client photo="scott-gummerson-_5Q1-ae44aw-unsplash.jpg" name="Naufal Zaul Karim"
               project="Design UI Mari Membaca" />
@@ -180,7 +177,6 @@ import CardReviewClient from '@/components/CardReviewClient.vue';
               project="Consultant UMKM Bersama" />
           </div>
         </div>
-        <!-- Slider indicators -->
         <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
           <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
             data-carousel-slide-to="0"></button>

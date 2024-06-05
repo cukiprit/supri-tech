@@ -1,16 +1,17 @@
 <script setup>
 import CardMissionCompany from '@/components/CardMissionCompany.vue';
-
 </script>
 
 <template>
   <div id="tentang">
-    <div class="h-96 w-1/2 bg-white flex flex-col justify-center items-center mx-auto">
-      <div class="flex items-center space-x-3 rtl:space-x-reverse mb-5">
-        <img src="/public/SupriTech.png" class="h-16 rounded-full" alt="Flowbite Logo" />
+    <div data-aos="fade-down" data-aos-duration="1600"
+      class="lg:w-2/3 bg-white flex flex-col justify-center items-center mx-auto mt-14 p-7 py-14 lg:p-20">
+      <div class="flex items-center space-x-3 rtl:space-x-reverse mb-8">
+        <img src="/public/SupriTech.png" class="h-14 rounded-full" alt="Flowbite Logo" />
         <span class="self-center text-4xl font-bold whitespace-nowrap dark:text-white">SUPRITECH</span>
       </div>
-      <p class="text-2xl text-center text-gray-500">" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+      <p class="lg:text-2xl text-center text-gray-500 leading-relaxed">" Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Beatae
         harum aliquam,
         corrupti
         eveniet
@@ -18,21 +19,22 @@ import CardMissionCompany from '@/components/CardMissionCompany.vue';
         voluptatum commodi dicta, deleniti labore?</p>
     </div>
 
-    <div class="min-h-screen p-20" style="background-image: url('/public/Sprinkle.svg');">
-      <div class="grid grid-cols-2 gap-8">
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-          class="text-white flex flex-col justify-center p-10">
-          <h1 class="text-4xl font-bold mb-4">Visi Perusahaan</h1>
-          <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem saepe officia perferendis
+    <div class="min-h-screen p-7 lg:p-20" style="background-image: url('/public/Sprinkle.svg');">
+      <div class="lg:grid lg:grid-cols-2 gap-8">
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200" data-aos-easing="ease-in-sine"
+          class="text-white text-center lg:text-left lg:flex flex-col justify-center lg:p-10">
+          <h1 class="text-3xl lg:text-4xl font-bold mb-4">Visi Perusahaan</h1>
+          <p class="lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem saepe officia
+            perferendis
             quod vel aliquam fugit quisquam ullam quos labore!</p>
         </div>
-        <div data-aos="zoom-in" class="max-h-fit">
+        <div data-aos="zoom-in" data-aos-duration="1400" class="hidden lg:block max-h-fit">
           <img class="w-full h-96 rounded shadow-lg" src="/public/CraftworkCard2.png" alt="">
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="mt-14">
-        <h1 class="text-4xl font-bold mb-4 text-center text-white">Misi Perusahaan</h1>
-        <div class="flex gap-3 mt-12">
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in" class="mt-14">
+        <h1 class="text-3xl lg:text-4xl font-bold mb-4 text-center text-white">Misi Perusahaan</h1>
+        <div class="flex flex-col lg:flex-row gap-3 mt-8 lg:mt-12">
           <card-mission-company label="Pengembangan SDM" />
           <card-mission-company label="Pengembangan SDM" />
           <card-mission-company label="Pengembangan SDM" />
@@ -41,15 +43,16 @@ import CardMissionCompany from '@/components/CardMissionCompany.vue';
       </div>
     </div>
 
-    <div class="min-h-screen p-20 text-center">
-      <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="w-2/3 mx-auto">
-        <h1 class="text-4xl font-bold mb-5">Struktur Perusahaan</h1>
-        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem error similique libero,
+    <div class="min-h-screen p-7 lg:p-20 text-center">
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200" data-aos-easing="ease-in"
+        class="lg:w-2/3 mx-auto">
+        <h1 class="text-3xl lg:text-4xl font-bold mb-5">Struktur Perusahaan</h1>
+        <p class="lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem error similique libero,
           optio pariatur
           repellat necessitatibus ducimus consequuntur explicabo adipisci!</p>
       </div>
-      <div class="grid grid-cols-3 mt-20">
-        <div data-aos="zoom-in" data-aos-duration="1800" class="">
+      <div class="grid lg:grid-cols-3 mt-20">
+        <div data-aos="zoom-in" data-aos-duration="1600">
           <div class="relative">
             <img class="w-64 mx-auto" src="/public/blob.png" alt="">
             <img class="absolute w-56 -top-10 start-20" src="/public/IMG_20210615_175646_369.png" alt="">
@@ -59,7 +62,7 @@ import CardMissionCompany from '@/components/CardMissionCompany.vue';
             <p class="text-gray-500">Front-end Developer</p>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1800" class="">
+        <div data-aos="zoom-in" data-aos-duration="1600" class="py-20">
           <div class="relative">
             <img class="w-64 mx-auto" src="/public/blob.png" alt="">
             <img class="absolute w-60 -top-8 start-16" src="/public/WhatsApp Image 2024-05-02 at 00.43.20_adaa070d.png"
@@ -70,7 +73,7 @@ import CardMissionCompany from '@/components/CardMissionCompany.vue';
             <p class="text-gray-500">Backend Developer</p>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1800" class="">
+        <div data-aos="zoom-in" data-aos-duration="1600" class="">
           <div class="relative">
             <img class="w-64 mx-auto" src="/public/blob.png" alt="">
             <img class="absolute w-52 -top-10 end-20" src="/public/WhatsApp Image 2024-05-02 at 00.42.19_de29f01e.png"
